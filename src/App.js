@@ -1,29 +1,44 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "./app.css";
+import { items } from "./data";
 
 function App() {
-  const [counter, setCounter] = useState(0);
-
-  const checkValue = () => {
-    if (counter <= 0) {
-      return;
-    } else {
-      setCounter(counter - 1);
-      return;
-    }
-  };
-
   return (
-    <div className="App">
-      <h1>This is the counter</h1>
-      <div id="counter-value">{counter}</div>
-      <button id="increment-btn" onClick={() => setCounter(counter + 1)}>
-        Increment
-      </button>
-      <button id="decrement-btn" onClick={() => checkValue()}>
-        Decrement
-      </button>
+    <div className="container">
+      <h1>Basket</h1>
+      {items.map((item) => {
+        return (
+          <div
+            class="item"
+            style={{
+              backgroundImage: `url(${item.img})`,
+              height: "250px",
+              width: "80%",
+              // backgroundSize: "200px 100px",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            {/* <div class="icon">
+              <img src="src/images/lion-king-photo-2.jpg" alt="" />
+            </div> */}
+            {/* <img src={item.img} alt="" className="item-image" /> */}
+            <img
+              src="https://www.thesun.co.uk/wp-content/uploads/2019/12/NINTCHDBPICT000546362051.jpg"
+              alt=""
+              className="icon"
+            />
+            <p>{item.company}</p>
+            <p>{item.itemName}</p>
+            <p>{item.size}</p>
+            <div class="priceAndUnit">
+              <p>(unit 1)</p>
+              <p>£{item.price}</p>
+            </div>
+          </div>
+        );
+      })}
+      <div class=""></div>
     </div>
   );
 }
