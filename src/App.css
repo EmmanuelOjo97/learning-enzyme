@@ -1,32 +1,62 @@
-body {
-  background-color: rgb(247, 239, 239);
-}
-.container {
-  background-color: rgb(253, 242, 242);
-  min-height: 25vh;
-  height: fit-content;
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  border: 1px solid black;
-  border-radius: 3px;
+/* mobile screen only*/
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(247, 239, 239);
+  }
+
+  .container {
+    background-color: rgb(253, 242, 242);
+    min-height: 25vh;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  .item {
+    border: 3px solid black;
+    text-align: left;
+    border-radius: 10px;
+    background-size: 10px;
+    height: fit-content;
+    margin: 50px 10px;
+  }
+
+  .item-info {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .item-image {
+    width: 95%;
+    display: block;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5%;
+  }
 }
 
-.item {
-  width: 50%;
-  margin: 20px auto;
-  /* min-height: 100px; */
-  /* max-height: 250px; */
-  border: 2px solid black;
-  text-align: left;
-  border-radius: 10px;
+ not mobile screen 
+ 
+ 
+
+@media only screen and (min-width: 601px) {
+  .item {
+    width: 50%;
+    margin: 20px auto;
+    border: 2px solid black;
+    text-align: left;
+    border-radius: 10px;
+  }
 }
 
 .item p {
-  margin-left: 10px;
   font-size: 20px;
   color: black;
   font-weight: bold;
+  margin: 5px 13px;
 }
 .priceAndUnit {
   display: flex;
@@ -35,29 +65,13 @@ body {
 }
 
 .icon {
-  /* margin-right: 50px;
-  position: absolute;
-  display: flex;
-  justify-content: right;
-  margin-left: 30%; */
-  margin-left: 10px;
-  margin-top: 8px;
-  height: 30px;
-  border-radius: 10px;
+  margin-left: 5%;
+  margin-top: 7%;
+  width: 10%;
+  border-radius: 5px;
   border: solid black 2px;
+  position: absolute;
 }
-
-/* img {
-  width: 50px;
-  border-radius: 10px;
-  border: 2px solid black;
-  height: 35px;
-} */
-
-/* .item-image {
-  height: 200px;
-  width: 100%;
-} */
 
 .basket {
   background-color: grey;
@@ -69,4 +83,13 @@ body {
 
 .basketname {
   padding-right: 145px;
+} */
+
+/* design layout */
+
+.header {
+  background-color: blue;
+  position: sticky;
+  top: 0;
+  size: 30px;
 }
